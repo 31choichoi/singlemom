@@ -1,6 +1,6 @@
 {
-  "name": "KUMFA Renewal",
-  "description": "Renewal of Korean Unwed Mothers' Families Association based on WomenFund layout",
+  "name": "한국미혼모가족협회",
+  "description": "미혼모와 그 자녀들의 당당한 삶을 지원하는 사단법인 한국미혼모가족협회입니다.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

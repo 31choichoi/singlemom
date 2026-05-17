@@ -404,10 +404,10 @@ const Hero = () => {
 
 const QuickActions = () => {
   const actions = [
-    { icon: <Heart className="w-6 h-6" />, label: '단체소개', color: 'bg-pink-50', iconColor: 'text-pink-600' },
-    { icon: <Users className="w-6 h-6" />, label: '회원가입', color: 'bg-blue-50', iconColor: 'text-blue-600' },
-    { icon: <BookOpen className="w-6 h-6" />, label: '후원하기', color: 'bg-pink-50', iconColor: 'text-pink-600' },
-    { icon: <Info className="w-6 h-6" />, label: '자원봉사', color: 'bg-green-50', iconColor: 'text-green-600' },
+    { icon: <Heart className="w-7 h-7" />, label: '단체소개', color: 'bg-pink-50', iconColor: 'text-pink-600' },
+    { icon: <Users className="w-7 h-7" />, label: '회원가입', color: 'bg-blue-50', iconColor: 'text-blue-600' },
+    { icon: <BookOpen className="w-7 h-7" />, label: '후원하기', color: 'bg-pink-50', iconColor: 'text-pink-600' },
+    { icon: <Info className="w-7 h-7" />, label: '자원봉사', color: 'bg-green-50', iconColor: 'text-green-600' },
   ];
 
   return (
@@ -417,19 +417,19 @@ const QuickActions = () => {
           <motion.button 
             key={idx} 
             whileHover="hover"
-            className="flex items-center gap-4 group h-20 text-left outline-none"
+            className="flex items-center gap-4 group h-24 text-left outline-none"
           >
-            <div className={`w-12 h-12 lg:w-16 lg:h-16 rounded-2xl flex items-center justify-center transition-transform group-hover:scale-110 shrink-0 ${active.color} ${active.iconColor}`}>
+            <div className={`w-14 h-14 lg:w-20 lg:h-20 rounded-2xl flex items-center justify-center transition-transform group-hover:scale-110 shrink-0 ${active.color} ${active.iconColor}`}>
               {active.icon}
             </div>
             <div className="flex-1">
-              <p className="text-[10px] text-gray-400 font-bold mb-1 uppercase tracking-tighter">service</p>
+              <p className="text-[11px] text-gray-400 font-bold mb-1 uppercase tracking-tighter">service</p>
               <motion.h3 
                 variants={{
-                  hover: { scale: 1.4, color: '#db2777', x: 10 }
+                  hover: { scale: 1.15, color: '#db2777', x: 10 }
                 }}
                 transition={{ type: 'spring', stiffness: 300, damping: 20 }}
-                className="font-bold text-gray-800 origin-left"
+                className="font-bold text-gray-800 origin-left text-lg lg:text-2xl"
               >
                 {active.label}
               </motion.h3>
