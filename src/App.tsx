@@ -91,10 +91,10 @@ const Header = () => {
             onClick={scrollToTop}
             className="flex items-center gap-2 font-bold text-xl cursor-pointer shrink-0 py-2"
           >
-            <div className={`w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center transition-colors shrink-0 ${isScrolled || isMegaMenuOpen ? 'bg-pink-600 text-white' : 'bg-white text-pink-600'}`}>
+            <div className={`w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center transition-colors shrink-0 ${isScrolled || hoveredItem ? 'bg-pink-600 text-white' : 'bg-white text-pink-600'}`}>
               K
             </div>
-            <div className={`flex flex-col leading-tight transition-colors ${isScrolled || isMegaMenuOpen ? 'text-gray-900' : 'text-white'}`}>
+            <div className={`flex flex-col leading-tight transition-colors ${isScrolled || hoveredItem ? 'text-gray-900' : 'text-white'}`}>
                 <span className="text-[8px] sm:text-[10px] font-medium opacity-70">사단법인</span>
                 <span className="text-sm sm:text-lg whitespace-nowrap">한국미혼모가족협회</span>
             </div>
@@ -113,7 +113,7 @@ const Header = () => {
                 >
                   <button 
                     onClick={() => scrollToSection(item.id)}
-                    className={`hover:text-pink-600 font-bold text-[18px] tracking-tight transition-colors whitespace-nowrap cursor-pointer ${isScrolled || isMegaMenuOpen ? 'text-gray-800' : 'text-white'}`}
+                    className={`hover:text-pink-600 font-bold text-[18px] tracking-tight transition-colors whitespace-nowrap cursor-pointer ${isScrolled || hoveredItem ? 'text-gray-800' : 'text-white'}`}
                   >
                     {item.name}
                   </button>
