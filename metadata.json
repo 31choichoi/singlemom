@@ -1,0 +1,6 @@
+{
+  "name": "KUMFA Renewal",
+  "description": "Renewal of Korean Unwed Mothers' Families Association based on WomenFund layout",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
